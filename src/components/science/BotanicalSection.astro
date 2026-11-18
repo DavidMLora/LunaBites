@@ -4,10 +4,9 @@ interface Props {
   number: string;
   name: string;
   scientific: string;
-  note: string;
   reverse?: boolean;
 }
-const { id, number, name, scientific, note, reverse = false } = Astro.props;
+const { id, number, name, scientific, reverse = false } = Astro.props;
 ---
 
 <section id={id} class:list={['botanical-section', { reverse }]}>
@@ -16,12 +15,12 @@ const { id, number, name, scientific, note, reverse = false } = Astro.props;
       src={'/images/' + id + '.png'}
       width="365"
       height="365"
-      alt={'Ilustración botánica original de ' + name}
+      alt={'Ilustración botánica de ' + name}
       loading="lazy"
     /><span>FIG. {number} · HERBARIO LUNA BITES</span>
   </figure><div class="botanical-text">
     <p class="eyebrow">{number} / Ingredientes con historia</p><h2>{name}</h2><p class="latin-name">
       {scientific}
-    </p><slot /><p class="botanical-footnote">{note}</p>
+    </p><slot />
   </div>
 </section>

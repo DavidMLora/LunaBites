@@ -15,7 +15,7 @@ export const products: readonly Product[] = [
     name: 'Tu pausa de la noche',
     subtitle: 'Paquete individual · 10 galletas',
     description:
-      'Galletas de mantequilla con valeriana, toronjil y pasiflora. Una forma deliciosa de acompañar tu ritual nocturno.',
+      'Galletas de mantequilla con hidrolatos de valeriana, toronjil morado y pasiflora. Una forma deliciosa de acompañar tu ritual nocturno.',
     price: 35,
     packages: 1,
     image: '/images/cookies-concept.webp',

@@ -1069,12 +1069,6 @@ summary:focus-visible {
   color: var(--muted);
   line-height: 1.9;
 }
-.botanical-footnote {
-  border-top: 1px solid var(--line);
-  padding-top: 17px;
-  margin-top: 22px !important;
-  font-size: 0.72rem !important;
-}
 .hydrolate {
   background: var(--lavender);
   padding-block: 80px;
@@ -1145,6 +1139,13 @@ summary:focus-visible {
 .science-sources a {
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+.science-sources summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.science-sources details > p:first-of-type {
+  margin-top: 14px;
 }
 .science-sources p + p {
   margin-top: 8px;

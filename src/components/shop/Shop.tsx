@@ -12,14 +12,12 @@ export default function Shop() {
   function openCheckout() {
     setCheckout(true);
     window.requestAnimationFrame(() =>
-      document
-        .getElementById('checkout')
-        ?.scrollIntoView({
-          behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches
-            ? 'instant'
-            : 'smooth',
-          block: 'start',
-        }),
+      document.getElementById('checkout')?.scrollIntoView({
+        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches
+          ? 'instant'
+          : 'smooth',
+        block: 'start',
+      }),
     );
   }
   return (
@@ -35,16 +33,17 @@ export default function Shop() {
             <details>
               <summary>¿Qué contiene cada presentación?</summary>
               <p>
-                El paquete individual incluye 10 galletas de mantequilla con valeriana, toronjil y
-                pasiflora. La caja contiene 10 paquetes individuales, 100 galletas en total.
+                El paquete individual incluye 10 galletas de mantequilla con hidrolatos de
+                valeriana, toronjil morado y pasiflora. La caja contiene 10 paquetes individuales,
+                100 galletas en total.
               </p>
             </details>
             <details>
               <summary>Sobre la formulación y los ingredientes</summary>
               <p>
-                Luna Bites es un alimento, no un medicamento. La formulación, el etiquetado y la
-                información definitiva de alérgenos están pendientes de validación. No se ofrecen
-                beneficios clínicos demostrados del producto.
+                Nuestras galletas combinan mantequilla e hidrolatos de valeriana, toronjil morado y
+                pasiflora. Contienen trigo, huevo y leche. El etiquetado definitivo está pendiente
+                de validación.
               </p>
             </details>
             <details>

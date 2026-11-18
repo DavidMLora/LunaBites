@@ -21,7 +21,7 @@ La página usa la paleta de referencia del encargo. Se verificó el crema `#F4F0
 - Archivo: `public/images/cookies-concept.webp`.
 - Herramienta: ImageGen integrada, modo de generación de imagen nueva; sin API ni CLI alternativa.
 - Conversión: PNG original a WebP, calidad 88, sin cambios de contenido.
-- Uso: portada, sección de producto e imagen del paquete individual. Se indica **imagen conceptual** y que la forma final está por definir.
+- Uso: portada, sección de producto e imagen del paquete individual. Se identifica como **imagen conceptual**.
 - No constituye fotografía de un producto comercial, evidencia de composición, presentación o empaque definitivo. Las plantas del decorado son ambientación, no una identificación botánica de ingredientes.
 
 Prompt final utilizado, literal:
@@ -30,9 +30,12 @@ Prompt final utilizado, literal:
 
 ## Fuentes informativas en ciencia
 
+- Los textos de las plantas y los hidrolatos se actualizaron con la primera página del documento `LUNA BITES .pdf`, proporcionado por el usuario. El toronjil morado corresponde a _Agastache mexicana_. La sección de políticas internas de la segunda página no forma parte del contenido web solicitado.
+- Las ilustraciones originales se conservan. El identificador `melisa` se mantiene únicamente en la ruta de la imagen y el ancla para no romper enlaces existentes; el nombre mostrado es **Toronjil morado · Agastache mexicana**.
+- [Bent et al. (2006): revisión sobre valeriana y sueño](https://doi.org/10.1016/j.amjmed.2006.02.026).
 - [NCCIH: Valeriana](https://www.nccih.nih.gov/health/valerian).
-- [EMA: Melissa officinalis](https://www.ema.europa.eu/en/medicines/herbal/melissae-folium).
-- [NCCIH: Pasiflora](https://www.nccih.nih.gov/health/passionflower).
+- [Palma-Tenango et al. (2021): Agastache mexicana](https://www.mdpi.com/1420-3049/26/12/3751).
+- [He et al. (2020): Passiflora edulis](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2020.00617/full).
 - [Universidad de Ciencias Agrícolas y Medicina Veterinaria de Cluj-Napoca: producción y composición de hidrolatos](https://journals.usamvcluj.ro/index.php/horticulture/article/view/15253).
 
 Los textos son explicaciones originales, sin reproducir pasajes extensos ni extrapolar beneficios clínicos al producto. Los enlaces figuran también en `/ciencia`.

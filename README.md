@@ -49,7 +49,8 @@ La caja de diez paquetes admite cantidades y puede añadirse a la bolsa, pero **
 
 ## Modificar el proyecto
 
-- **Identidad:** `src/styles/tokens.css`. Colores, tipografía, espaciado, radios y sombras en un solo lugar. Georgia conserva la identidad de la presentación; Segoe UI hace legibles los controles y los textos pequeños.
+- **Identidad:** `src/styles/tokens.css`. Colores, tipografía, espaciado, radios y sombras en un solo lugar. Georgia conserva la identidad de marca; Segoe UI hace legibles los controles y los textos pequeños.
+- **Plantas:** `src/data/plants.ts`. Nombres científicos y textos compartidos entre inicio y ciencia: valeriana, toronjil morado (_Agastache mexicana_) y pasiflora. Los identificadores de imágenes y anclas existentes se conservan para mantener los enlaces.
 - **Diseño responsive:** `src/styles/global.css`. Composiciones y ajustes específicos para escritorio, tableta y móvil, además de foco visible y movimiento reducido.
 - **Productos y precios:** `src/data/products.ts`. El precio individual inicial es $35 MXN de referencia; el precio de caja es `null` hasta su confirmación. Los pedidos guardan una copia del precio al confirmar para conservar su historial.
 - **Ubicaciones:** `src/data/branches.ts`. Las tres coordenadas son zonas de referencia, no sucursales comerciales. Reemplazar nombres, coordenadas y avisos solo cuando existan datos definitivos.
@@ -83,10 +84,10 @@ Los datos guardados deben ser ficticios: no hay privacidad entre perfiles simula
 - La imagen principal fue generada como visual conceptual: no representa una fotografía ni forma final confirmada. Los logotipos y las ilustraciones botánicas son los originales proporcionados.
 - No hay empaque definitivo de la caja; se muestra el sello original y se indica que está por definir.
 - No existen sucursales comerciales confirmadas, horarios ni teléfonos inventados.
-- La formulación, información de alérgenos y etiquetado siguen pendientes de validación; la tienda lo comunica.
-- No se atribuyen efectos clínicos al producto. La ciencia distingue _Passiflora edulis_ (presentación) de _P. incarnata_ (fuentes clínicas).
+- El etiquetado definitivo está pendiente de validación; la tienda informa sobre trigo, huevo y leche.
+- Los textos botánicos describen _Valeriana officinalis_, _Agastache mexicana_ y _Passiflora edulis_, con referencias específicas de las especies y sin atribuir efectos clínicos a las galletas.
 - Solo el mapa necesita Internet para descargar teselas de OpenStreetMap. La lista de recogida funciona aunque no carguen. El resto de los recursos visuales se sirve localmente.
-- Sin publicación, push, servicios comerciales, analítica, fuentes remotas ni comunicación con pasarelas de pago.
+- Las compras y los perfiles son de demostración. Sin servicios comerciales, analítica, fuentes remotas ni comunicación con pasarelas de pago.
 
 ## Formato
 
