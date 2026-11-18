@@ -1,0 +1,24 @@
+---
+import PublicLayout from '../layouts/PublicLayout.astro';
+import Shop from '../components/shop/Shop';
+---
+
+<PublicLayout title="Las galletas"
+  ><div class="wrap page-shell">
+    <header class="page-intro">
+      <p class="eyebrow">De nuestra cocina a tu ritual</p><h1>
+        Elige tu próxima<br /><em>pausa deliciosa.</em>
+      </h1><p>
+        Galletas de mantequilla con tres ingredientes botánicos. Un pequeño gusto para acompañar el
+        final del día.
+      </p>
+    </header><div class="demo-note">
+      <span class="demo-pill">Demo</span><span
+        >Esta tienda es un prototipo. Los pedidos y pagos son simulados. El precio individual de $35
+        MXN es de referencia y puede actualizarse.</span>
+    </div><Shop client:load /><noscript
+      ><p class="error-message">
+        Activa JavaScript para seleccionar cantidades, utilizar la bolsa y simular un pedido.
+      </p></noscript>
+  </div></PublicLayout
+>

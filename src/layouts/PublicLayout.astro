@@ -1,0 +1,29 @@
+---
+import Header from '../components/layout/Header.astro';
+import Footer from '../components/layout/Footer.astro';
+import '../styles/tokens.css';
+import '../styles/global.css';
+interface Props {
+  title: string;
+  description?: string;
+}
+const {
+  title,
+  description = 'Repostería funcional botánica de Aguascalientes. Descubre Luna Bites y una pausa deliciosa antes de soñar.',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="es-MX">
+  <head
+    ><meta charset="UTF-8" /><meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    /><meta name="description" content={description} /><meta
+      name="theme-color"
+      content="#132548"
+    /><link rel="icon" type="image/png" href="/images/seal-presentation.png" /><title>
+      {title} · Luna Bites
+    </title></head
+  ><body><Header /><main id="contenido" tabindex="-1"><slot /></main><Footer /></body>
+</html>

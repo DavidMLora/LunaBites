@@ -1,0 +1,31 @@
+---
+const steps = [
+  'Selección de materias primas',
+  'Preparación de ingredientes',
+  'Elaboración de la mezcla',
+  'Integración de botánicos',
+  'Moldeado de las galletas',
+  'Horneado',
+  'Enfriamiento y empaquetado',
+  'Evaluación de calidad',
+];
+---
+
+<section class="process wrap">
+  <p class="eyebrow">El cuidado también es un ingrediente</p><h2>
+    Del ingrediente a la galleta.<br /><em>Cada paso cuenta.</em>
+  </h2><ol class="process-list">
+    {
+      steps.map((step, index) => (
+        <li>
+          <span>{String(index + 1).padStart(2, '0')}</span>
+          {step}
+        </li>
+      ))
+    }
+  </ol><p class="small muted">
+    El proceso propuesto contempla selección de materias primas, cuidado de la higiene y evaluación
+    de sabor, textura e inocuidad. La estandarización de la formulación y su validación siguen
+    siendo parte del desarrollo del producto.
+  </p>
+</section>

@@ -1,0 +1,27 @@
+---
+interface Props {
+  id: string;
+  number: string;
+  name: string;
+  scientific: string;
+  note: string;
+  reverse?: boolean;
+}
+const { id, number, name, scientific, note, reverse = false } = Astro.props;
+---
+
+<section id={id} class:list={['botanical-section', { reverse }]}>
+  <figure class="botanical-art">
+    <img
+      src={'/images/' + id + '.png'}
+      width="365"
+      height="365"
+      alt={'Ilustración botánica original de ' + name}
+      loading="lazy"
+    /><span>FIG. {number} · HERBARIO LUNA BITES</span>
+  </figure><div class="botanical-text">
+    <p class="eyebrow">{number} / Ingredientes con historia</p><h2>{name}</h2><p class="latin-name">
+      {scientific}
+    </p><slot /><p class="botanical-footnote">{note}</p>
+  </div>
+</section>

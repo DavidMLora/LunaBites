@@ -1,0 +1,28 @@
+---
+interface Props {
+  name: 'bag' | 'user' | 'arrow' | 'moon' | 'leaf' | 'pin' | 'close';
+  size?: number;
+}
+const { name, size = 22 } = Astro.props;
+const paths = {
+  bag: 'M5 7h14l1 14H4L5 7Zm3 0V5a4 4 0 0 1 8 0v2',
+  user: 'M20 21v-2a8 8 0 0 0-16 0v2M16 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z',
+  arrow: 'M4 12h16m-6-6 6 6-6 6',
+  moon: 'M20.5 13.5A9 9 0 0 1 10.5 3 9 9 0 1 0 20.5 13.5ZM19 2v5m-2.5-2.5h5',
+  leaf: 'M20 3C8 3 3 9 5 16c6 7 15 1 15-13ZM4 21 16 9',
+  pin: 'M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0ZM15 10a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z',
+  close: 'm5 5 14 14M19 5 5 19',
+};
+---
+
+<svg
+  width={size}
+  height={size}
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"><path d={paths[name]}></path></svg
+>

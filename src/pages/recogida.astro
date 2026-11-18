@@ -1,0 +1,32 @@
+---
+import PublicLayout from '../layouts/PublicLayout.astro';
+import PickupMap from '../components/PickupMap';
+---
+
+<PublicLayout title="Puntos de recogida"
+  ><div class="wrap page-shell">
+    <header class="page-intro">
+      <p class="eyebrow">Comenzamos cerca de ti</p><h1>
+        Una pausa con<br /><em>acento hidrocálido.</em>
+      </h1><p>
+        Imaginamos Luna Bites cerca de tus rutas cotidianas. Explora cómo funcionaría la recogida de
+        tu pedido en Aguascalientes.
+      </p>
+    </header><div class="demo-note">
+      <span class="demo-pill">Demo</span><span
+        >Estas ubicaciones son zonas de referencia para probar el prototipo. Aún no hay sucursales,
+        direcciones comerciales, horarios ni contactos confirmados.</span>
+    </div><PickupMap client:load /><noscript
+      ><p class="error-message">
+        Activa JavaScript para usar el mapa y seleccionar una zona de demostración. Zonas de
+        referencia: Centro, Norte y Oriente de Aguascalientes.
+      </p></noscript
+    ><section class="pickup-footer">
+      <h2>De la bolsa<br /><em>a tu próxima pausa.</em></h2><p>
+        Elige una zona, simula tu pedido y consulta el seguimiento desde tu cuenta. Cuando el equipo
+        cambie el estado a “Listo para recoger”, podrás verlo en el prototipo. La recogida no es
+        real en esta versión.
+      </p>
+    </section>
+  </div></PublicLayout
+>

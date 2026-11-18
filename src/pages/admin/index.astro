@@ -1,0 +1,12 @@
+---
+import AdminLayout from '../../layouts/AdminLayout.astro';
+import AdminDashboard from '../../components/admin/AdminDashboard';
+---
+
+<AdminLayout
+  ><AdminDashboard client:load /><noscript
+    ><p class="error-message">
+      Activa JavaScript para probar la administración y los cambios de estado.
+    </p></noscript
+  ></AdminLayout
+>

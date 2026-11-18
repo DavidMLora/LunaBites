@@ -1,0 +1,34 @@
+---
+import '../styles/tokens.css';
+import '../styles/global.css';
+import Icon from '../components/layout/Icon.astro';
+---
+
+<!doctype html>
+<html lang="es-MX">
+  <head
+    ><meta charset="UTF-8" /><meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    /><meta name="robots" content="noindex, nofollow" /><meta
+      name="theme-color"
+      content="#132548"
+    /><link rel="icon" href="/images/seal-presentation.png" /><title>
+      Administración demo · Luna Bites
+    </title></head
+  ><body class="admin-body"
+    ><a class="skip-link" href="#contenido">Saltar al contenido</a><header class="admin-header">
+      <a href="/admin"
+        ><img src="/images/seal-presentation.png" width="431" height="452" alt="LunaBite" /><span
+          ><strong>Luna Bites</strong><span class="eyebrow">Espacio del equipo · demo</span></span
+        ></a
+      ><a href="/"><span>Volver al jardín</span><Icon name="arrow" size={18} /></a>
+    </header><main id="contenido" tabindex="-1" class="wrap admin-shell">
+      <p class="eyebrow">Cada pedido, con cuidado</p><h1>Una cocina en calma.</h1><div
+        class="demo-note"
+      >
+        Panel de demostración. Los roles, pedidos y pagos son locales y simulados. Sin autorización
+        real ni conexión a un servidor.
+      </div><slot />
+    </main></body>
+</html>

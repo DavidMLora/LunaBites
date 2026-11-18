@@ -1,0 +1,30 @@
+---
+import Icon from './Icon.astro';
+---
+
+<footer class="site-footer">
+  <div class="footer-main wrap">
+    <a href="/" class="footer-brand" aria-label="Luna Bites, inicio"
+      ><img
+        src="/images/seal-presentation.png"
+        width="431"
+        height="452"
+        alt="Logotipo oficial LunaBite"
+        loading="lazy"
+      /><span>Un pequeño ritual.<br /><em>Una noche muy tuya.</em></span></a
+    ><div>
+      <p class="eyebrow">Explora a tu ritmo</p><a href="/ciencia">Nuestra ciencia</a><a
+        href="/tienda">Las galletas</a
+      ><a href="/recogida">Puntos de recogida</a>
+    </div><div>
+      <p class="eyebrow">Tu espacio</p><a href="/cuenta">Mi cuenta y pedidos</a><a href="/admin"
+        >Administración demo</a
+      ><span class="footer-location"><Icon name="pin" size={16} /> Aguascalientes, México</span>
+    </div>
+  </div>
+  <div class="footer-bottom wrap">
+    <span>© {new Date().getFullYear()} Luna Bites</span><span
+      >Hecho para acompañar tus noches.</span
+    ><span>Prototipo local · compras simuladas</span>
+  </div>
+</footer>

@@ -1,0 +1,46 @@
+---
+import Icon from '../layout/Icon.astro';
+const plants = [
+  { image: 'valeriana', label: 'Valeriana', scientific: 'Valeriana officinalis', number: '01' },
+  { image: 'melisa', label: 'Toronjil', scientific: 'Melissa officinalis', number: '02' },
+  { image: 'pasiflora', label: 'Pasiflora', scientific: 'Passiflora edulis', number: '03' },
+];
+---
+
+<section class="science-preview section-space wrap">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Nuestro pequeño herbario</p><h2>
+        La naturaleza tiene<br /><em>mucho que contarnos.</em>
+      </h2>
+    </div><a class="text-link" href="/ciencia"
+      >Explora nuestra ciencia <Icon name="arrow" size={19} /></a>
+  </div><div class="herb-gallery">
+    {
+      plants.map((plant) => (
+        <a href={'/ciencia#' + plant.image} class={'herb-preview herb-' + plant.image}>
+          <>
+            <span class="herb-number">{plant.number} / HERBARIO</span>
+            <img
+              src={'/images/' + plant.image + '.png'}
+              width="312"
+              height="306"
+              alt={'Ilustración de ' + plant.label + ' de la presentación original'}
+              loading="lazy"
+            />
+            <div>
+              <>
+                <h3>{plant.label}</h3>
+                <p>{plant.scientific}</p>
+                <span aria-hidden="true">↗</span>
+              </>
+            </div>
+          </>
+        </a>
+      ))
+    }
+  </div><p class="science-caption">
+    Tres ingredientes botánicos, una formulación por descubrir. Luna Bites es un alimento, no un
+    medicamento.
+  </p>
+</section>

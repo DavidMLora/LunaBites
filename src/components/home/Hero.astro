@@ -1,0 +1,45 @@
+---
+import Icon from '../layout/Icon.astro';
+---
+
+<section class="hero night">
+  <div class="hero-stars" aria-hidden="true">
+    <span>✦</span><span>✧</span><span>✦</span><span>·</span><span>✧</span>
+  </div>
+  <div class="hero-grid wrap">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="tiny-line"></span> Repostería funcional botánica</p><h1>
+        Una pausa<br /><em>deliciosa</em><br />antes de soñar<span class="gold-dot">.</span>
+      </h1><p class="hero-description">
+        Cuando el día termina, tu momento empieza.<br class="desktop-only" /> Galletas con botánicos
+        para acompañar<br class="desktop-only" /> el ritual de bajar el ritmo.
+      </p><a href="/tienda" class="button button-lavender"
+        >Descubre las galletas <Icon name="arrow" size={19} /></a
+      ><div class="hero-signature">
+        <span class="signature-line"></span><span
+          >Hechas para tus noches.<br /><strong>Desde Aguascalientes.</strong></span>
+      </div>
+    </div>
+    <figure class="hero-art">
+      <div class="orbit orbit-one" aria-hidden="true"></div><div
+        class="orbit orbit-two"
+        aria-hidden="true"
+      >
+      </div><div class="art-image">
+        <img
+          src="/images/cookies-concept.webp"
+          alt="Composición conceptual de galletas de mantequilla en forma de luna, sobre un plato de cerámica y lino azul nocturno"
+          width="1024"
+          height="1280"
+          fetchpriority="high"
+        />
+      </div><span class="art-star" aria-hidden="true">✦</span><div class="hero-seal">
+        <Icon name="moon" size={24} /><span>Un bocado<br /><em>para tu ritual</em></span>
+      </div><figcaption>Imagen conceptual del producto</figcaption>
+    </figure>
+  </div>
+  <div class="hero-bottom wrap">
+    <a href="#origen"><span class="scroll-circle">↓</span> Deja el día atrás</a><span
+      >EL JARDÍN DE MEDIANOCHE <span aria-hidden="true">✦</span> LUNA BITES</span>
+  </div>
+</section>

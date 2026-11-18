@@ -1,0 +1,29 @@
+:root {
+  /* Branding de la presentación. Georgia y crema se verificaron en el PDF.
+     Los tonos de referencia se conservan para el resto de la identidad. */
+  --night: #132548;
+  --lavender: #beb5cc;
+  --sage: #ccd2bb;
+  --sage-strong: #9fb082;
+  --cream: #f4f0e9;
+  --beige: #e6dcd0;
+  --gold: #c2a16f;
+  --purple: #403b58;
+  --paper: #fcfaf6;
+  --muted: #5e6571;
+  --line: color-mix(in srgb, var(--night) 17%, transparent);
+  --font-heading: Georgia, 'Times New Roman', serif;
+  --font-body: 'Segoe UI', Arial, sans-serif;
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+  --space-6: 5rem;
+  --space-7: 8rem;
+  --radius: 1rem;
+  --radius-small: 0.45rem;
+  --shadow: 0 18px 55px #1325480d;
+  --max-width: 1280px;
+  --gutter: clamp(1.25rem, 5vw, 5rem);
+}

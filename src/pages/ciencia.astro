@@ -1,0 +1,113 @@
+---
+import PublicLayout from '../layouts/PublicLayout.astro';
+import BotanicalSection from '../components/science/BotanicalSection.astro';
+import HydrolateExplainer from '../components/science/HydrolateExplainer.astro';
+import ProductionProcess from '../components/science/ProductionProcess.astro';
+---
+
+<PublicLayout
+  title="Nuestra ciencia"
+  description="El herbario de Luna Bites: valeriana, toronjil, pasiflora, hidrolatos y el cuidado detrás de nuestras galletas."
+>
+  <section class="science-intro night">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">El herbario de medianoche</p><h1>
+          La botánica inspira.<br /><em>La curiosidad<br />nos guía.</em>
+        </h1><p class="intro-description">
+          Tres plantas, sus historias y una forma diferente de llevarlas a la repostería. Te
+          invitamos a conocer lo que hay detrás de Luna Bites.
+        </p>
+      </div><figure class="herb-cover">
+        <img
+          src="/images/pasiflora.png"
+          width="512"
+          height="424"
+          alt="Ilustración de pasiflora de la presentación Luna Bites"
+        /><span>Un pequeño universo<br />en cada ingrediente.</span>
+      </figure>
+    </div>
+  </section>
+  <div class="wrap science-disclaimer">
+    Luna Bites es un alimento, no un medicamento. No se han aportado estudios clínicos del producto
+    terminado que demuestren efectos sobre el sueño.
+  </div>
+  <div class="wrap">
+    <BotanicalSection
+      id="valeriana"
+      number="01"
+      name="Valeriana"
+      scientific="Valeriana officinalis"
+      note="Tradición y evidencia son cosas distintas: no trasladamos los resultados de un extracto a una galleta."
+      ><p>
+        Una planta con una larga historia en las preparaciones herbales de la noche. Su raíz es la
+        parte que suele estudiarse en este contexto e inspira nuestra exploración botánica.
+      </p><p>
+        La investigación sobre valeriana y sueño ofrece resultados inconsistentes. En Luna Bites
+        forma parte de una propuesta alimenticia, sin promesas de tratar el insomnio ni de
+        garantizar el descanso.
+      </p></BotanicalSection
+    >
+    <BotanicalSection
+      id="melisa"
+      number="02"
+      name="Toronjil o melisa"
+      scientific="Melissa officinalis"
+      reverse
+      note="El reconocimiento de usos tradicionales de una planta no demuestra la eficacia de Luna Bites."
+      ><p>
+        Sus hojas y su aroma característico la han convertido en una presencia familiar en la
+        tradición herbolaria. Nos interesa esa conexión entre botánica, cocina y momentos
+        cotidianos.
+      </p><p>
+        La Agencia Europea de Medicamentos describe usos tradicionales de preparados de melisa. Esa
+        información corresponde a preparaciones específicas y no valida un efecto clínico de
+        nuestras galletas.
+      </p></BotanicalSection
+    >
+    <BotanicalSection
+      id="pasiflora"
+      number="03"
+      name="Pasiflora"
+      scientific="Passiflora edulis"
+      note="La presentación identifica Passiflora edulis. No extrapolamos la evidencia de Passiflora incarnata a esta especie o al producto."
+      ><p>
+        La flor que pone un toque de asombro en nuestro herbario. La pasiflora aparece en la
+        formulación descrita por Luna Bites y completa este encuentro de tres ingredientes
+        botánicos.
+      </p><p>
+        Las especies importan: buena parte de la información clínica sobre “passionflower” se
+        refiere a Passiflora incarnata. No es la misma especie que la indicada en la presentación de
+        la marca.
+      </p></BotanicalSection
+    >
+  </div>
+  <HydrolateExplainer /><ProductionProcess />
+  <div class="wrap science-sources" style="padding-bottom:55px">
+    <p>
+      Para seguir explorando: <a
+        href="https://www.nccih.nih.gov/health/valerian"
+        target="_blank"
+        rel="noopener noreferrer">NCCIH · Valeriana</a
+      > · <a
+        href="https://www.ema.europa.eu/en/medicines/herbal/melissae-folium"
+        target="_blank"
+        rel="noopener noreferrer">EMA · Melissa officinalis</a
+      > · <a
+        href="https://www.nccih.nih.gov/health/passionflower"
+        target="_blank"
+        rel="noopener noreferrer">NCCIH · Pasiflora</a
+      >.
+    </p><p>
+      Sobre destilación: <a
+        href="https://journals.usamvcluj.ro/index.php/horticulture/article/view/15253"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Universidad de Ciencias Agrícolas y Medicina Veterinaria de Cluj-Napoca · Hidrolatos</a
+      >. Estas fuentes explican plantas y procesos; no constituyen estudios ni avales de Luna Bites.
+    </p><p>
+      La formulación, las etapas de elaboración y las ilustraciones provienen de la presentación de
+      la marca.
+    </p>
+  </div>
+</PublicLayout>

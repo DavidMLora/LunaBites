@@ -1,0 +1,21 @@
+---
+import PublicLayout from '../layouts/PublicLayout.astro';
+import Account from '../components/orders/Account';
+---
+
+<PublicLayout title="Mi cuenta y pedidos"
+  ><div class="wrap page-shell">
+    <header class="page-intro">
+      <p class="eyebrow">Tu rincón de Luna Bites</p><h1>
+        Cada pausa<br /><em>tiene su historia.</em>
+      </h1><p>Un lugar para consultar tus pedidos y saber cuándo estarán listos para recoger.</p>
+    </header><div class="demo-note">
+      <span class="demo-pill">Demo</span><span
+        >Perfil y seguimiento simulados. Los datos se guardan únicamente en este navegador; no
+        existe una cuenta real.</span>
+    </div><Account client:load /><noscript
+      ><p class="error-message">
+        Activa JavaScript para acceder al perfil y consultar el seguimiento de demostración.
+      </p></noscript>
+  </div></PublicLayout
+>
